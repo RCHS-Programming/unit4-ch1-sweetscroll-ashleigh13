@@ -5,7 +5,8 @@ body, html {
   color: White;
 }
 
-.cd-logo, .kitchen-equipment, .cake-ingredients {
+.cd-logo, .kitchen-equipment, .cake-ingredients, 
+.cake-preparation, .cooking-instructions, .cake-decorations, .cakeLogo {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,4 +57,30 @@ h3 {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+
+.cake-preparation {
+  background-image: url("utensils.JPG");
+}
+
+.cooking-instructions {
+  background-image: url("mixer.jpg");
+}
+
+.cake-decorations {
+  background-image: url("oven.jpg");
+}
+
+.cakeLogo {
+  background-image: url("rosecake.jpg");
+  min-height: 100%;
+  background-size: auto;
+}
+
+/* Turn off parallax scrolling for tablets and phones as it is not supported*/
+@media only screen and (max-device-width: 1024px) {
+  .cd-logo, .kitchen-equipment, .cake-ingredients, 
+.cake-preparation, .cooking-instructions, .cake-decorations, .cakeLogo {
+  background-attachment: scroll;
+    }
 }
